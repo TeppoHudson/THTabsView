@@ -1,9 +1,9 @@
 //
-//  CosmTabsView.h
-//  CosmEthics
+//  THTabsView.h
+//  Publishzer
 //
 //  Created by Teppo Hudson on 16/07/15.
-//  Copyright (c) 2015 CosmEthics. All rights reserved.
+//  Copyright (c) 2015 Teppo Hudson. All rights reserved.
 //
 
 #import <UIKit/UIKit.h>
