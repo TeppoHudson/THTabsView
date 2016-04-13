@@ -6,10 +6,10 @@
 //  Copyright (c) 2015 Teppo Hudson. All rights reserved.
 //
 
-#import "CosmTabsView.h"
+#import "THTabsView.h"
 #import "CosmColor.h"
 
-@implementation CosmTabsView
+@implementation THTabsView
 
 - (void)baseInit {
     _delegate = nil;
