@@ -7,13 +7,13 @@
 //
 
 #import <UIKit/UIKit.h>
-@class CosmTabsView;
+@class THTabsView;
 
-@protocol COSMtabsViewDelegate
-- (void)tabsView:(CosmTabsView *)tabsView tabDidChange:(int)selectedIndex;
+@protocol THtabsViewDelegate
+- (void)tabsView:(THTabsView *)tabsView tabDidChange:(int)selectedIndex;
 @end
 
-@interface CosmTabsView : UIView
+@interface THTabsView : UIView
 
 @property (assign) id <COSMtabsViewDelegate> delegate;
 
