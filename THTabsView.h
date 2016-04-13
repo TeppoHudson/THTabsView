@@ -1,28 +1,33 @@
 //
-//  THTabsView.h
-//  Publishzer
+//  CosmTabsView.h
+//  CosmEthics
 //
 //  Created by Teppo Hudson on 16/07/15.
-//  Copyright (c) 2015 Teppo Hudson. All rights reserved.
+//  Copyright (c) 2015 CosmEthics. All rights reserved.
 //
 
 #import <UIKit/UIKit.h>
-@class THTabsView;
+@class CosmTabsView;
 
-@protocol THtabsViewDelegate
-- (void)tabsView:(THTabsView *)tabsView tabDidChange:(int)selectedIndex;
+@protocol COSMtabsViewDelegate
+- (void)tabsView:(CosmTabsView *)tabsView tabDidChange:(int)selectedIndex;
 @end
 
-@interface THTabsView : UIView
+@interface CosmTabsView : UIView
 
-@property (assign) id <THtabsViewDelegate> delegate;
+@property (assign) id <COSMtabsViewDelegate> delegate;
 
 @property (nonatomic, strong)UIScrollView *scrollview;
 
 @property (nonatomic, strong) CALayer *tabBottom;
+@property (nonatomic, strong) CAShapeLayer *tabCircle;
+@property (nonatomic, strong) UIView *circleContainer;
 @property (nonatomic, strong) UIColor *tintColor;
+@property (nonatomic) float tabCircleBorderWidth;
 @property (nonatomic) int  selectedIndex;
 @property (nonatomic) BOOL hasMiddleBorder;
+@property (nonatomic) BOOL useCircle;
+@property (nonatomic) BOOL useLine;
 
 @property (nonatomic) int numberOfTabs;
 @property (nonatomic, strong) NSArray *labelTexts;
